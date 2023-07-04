@@ -66,7 +66,7 @@ public partial class MainWindow : GamepadWindow
     public static PerformanceManager performanceManager;
     public static UpdateManager updateManager;
 
-    public static string CurrentExe, CurrentPath, CurrentPathService;
+    public static string CurrentExe, CurrentPath, CurrentPathService, CurrentPathXInputPlus;
 
     private static MainWindow CurrentWindow;
     public static FileVersionInfo fileVersionInfo;
@@ -133,11 +133,18 @@ public partial class MainWindow : GamepadWindow
         CurrentExe = process.MainModule.FileName;
         CurrentPath = AppDomain.CurrentDomain.BaseDirectory;
         CurrentPathService = Path.Combine(CurrentPath, "ControllerService.exe");
+        CurrentPathXInputPlus = Path.Combine(CurrentPath, "XInputPlus.exe");
 
-        // verifying HidHide is installed
+        // verifying service executable is available
         if (!File.Exists(CurrentPathService))
         {
-            LogManager.LogCritical("Controller Service executable is missing");
+            LogManager.LogCritical("Service executable is missing");
+            throw new InvalidOperationException();
+        }
+        // verifying XInputPlus executable is available
+        if (!File.Exists(CurrentPathXInputPlus))
+        {
+            LogManager.LogCritical("XInputPlus executable is missing");
             throw new InvalidOperationException();
         }
 

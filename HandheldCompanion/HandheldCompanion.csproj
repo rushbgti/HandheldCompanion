@@ -93,7 +93,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="Resources\icon.ico" />
-    <Content Include="Resources\xinput1_x64.dll" />
   </ItemGroup>
 
   <ItemGroup>

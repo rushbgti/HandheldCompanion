@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neptune-hidapi.net", "neptu
 		{9B860078-9AD1-45DD-8F85-E6D806E5DC9B} = {9B860078-9AD1-45DD-8F85-E6D806E5DC9B}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XInputPlus", "XInputPlus\XInputPlus.csproj", "{0645B0DE-211F-4C53-B767-469AB267A2F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,14 @@ Global
 		{F7283783-81EF-4CD2-BD86-598FE193C11F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7283783-81EF-4CD2-BD86-598FE193C11F}.Release|x64.ActiveCfg = Release|x64
 		{F7283783-81EF-4CD2-BD86-598FE193C11F}.Release|x64.Build.0 = Release|x64
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Debug|x64.Build.0 = Debug|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Release|x64.ActiveCfg = Release|Any CPU
+		{0645B0DE-211F-4C53-B767-469AB267A2F9}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

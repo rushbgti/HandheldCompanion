@@ -399,8 +399,10 @@ public static class ProfileManager
             if (!File.Exists(profile.Path))
                 profile.ErrorCode |= ProfileErrorCode.MissingExecutable;
 
+            /*
             if (!CommonUtils.IsDirectoryWritable(processpath))
                 profile.ErrorCode |= ProfileErrorCode.MissingPermission;
+            */
 
             if (ProcessManager.GetProcesses(profile.Executable).Capacity > 0)
                 profile.ErrorCode |= ProfileErrorCode.Running;
